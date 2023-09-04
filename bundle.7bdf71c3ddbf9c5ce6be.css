@@ -1,0 +1,231 @@
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/index.css ***!
+  \*****************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/index.css (1) ***!
+  \*********************************************************************/
+:root {
+    --constant-color-black: black;
+    --constant-color-white: white;
+    --constant-color-green: green;
+
+    --constant-font-size-normal: 1rem;
+    --constant-font-size-medium: 2rem;
+    --constant-font-size-big: 7rem;
+
+    --constant-border-radius: 10px;
+
+    --token-background-color-primary: var(--constant-color-black);
+    --token-background-color-hover: var(--constant-color-white);
+    --token-color-primary: var(--constant-color-white);
+    --token-color-hover: var(--constant-color-black);
+}
+
+* {
+    all: unset;
+    display: revert;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Press Start 2P", cursive;
+    font-size: var(--constant-font-size-normal);
+}
+
+/*!******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/App/App.css ***!
+  \******************************************************************************/
+#root {
+    height: 100vh;
+    background-color: var(--token-background-color-primary);
+    color: var(--token-color-primary);
+    transition: all 0.4s ease;
+}
+
+#root.win {
+    background-color: var(--constant-color-green);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+[theme="light"] {
+    --token-background-color-primary: var(--constant-color-white);
+    --token-color-primary: var(--constant-color-black);
+    --token-background-color-hover: var(--constant-color-black);
+    --token-color-hover: var(--constant-color-white);
+}
+
+/*!************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Header/Header.css ***!
+  \************************************************************************************/
+.header {
+    height: 10%;
+}
+
+.header__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*!************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Button/Button.css ***!
+  \************************************************************************************/
+.button {
+    border: 1px solid var(--token-color-primary);
+    border-radius: var(--constant-border-radius);
+    padding: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: all 0.2s ease-in;
+}
+
+.button[disabled] {
+    opacity: 0.4;
+}
+
+.button:not([disabled]):hover {
+    background-color: var(--token-background-color-hover);
+    color: var(--token-color-hover);
+    cursor: pointer;
+}
+
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Main/Main.css ***!
+  \********************************************************************************/
+.main {
+    height: 90%;
+}
+
+.main__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Hero/Hero.css ***!
+  \********************************************************************************/
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero__secret-number,
+.hero__game-condition-info {
+    font-size: var(--constant-font-size-big);
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hero__secret-number {
+    color: yellow;
+}
+
+.hero__game-condition-info {
+    color: indigo;
+}
+
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Form/Form.css ***!
+  \********************************************************************************/
+.form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    transition: all 0.4s ease;
+    visibility: visible;
+    opacity: 1;
+}
+
+.form_hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.form__input-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.form__label {
+    font-size: var(--constant-font-size-medium);
+}
+
+.form__input {
+    max-width: 200px;
+    padding: 20px;
+    border: 1px solid var(--token-color-primary);
+    border-radius: var(--constant-border-radius);
+    background-color: inherit;
+    color: var(--token-color-primary);
+    font-size: var(--constant-font-size-medium);
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.2s ease-in;
+}
+
+.form__input:focus {
+    background-color: var(--token-background-color-hover);
+    color: var(--token-color-hover);
+}
+
+.form__error-message {
+    color: hotpink;
+}
+
+.form__submit-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*!******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/InfoBlock/InfoBlock.css ***!
+  \******************************************************************************************/
+.info-block {
+    border: 1px solid var(--token-color-primary);
+    border-radius: var(--constant-border-radius);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-block__level,
+.info-block__try-counts {
+    font-weight: bold;
+}
+
+.info-block__theme {
+    border-radius: var(--constant-border-radius);
+    padding: 5px;
+    text-align: center;
+}
+
+.info-block__theme:focus {
+    outline: 1px solid var(--token-color-primary);
+}
+
+.info-block__theme option {
+    background-color: var(--token-background-color-primary);
+    color: var(--token-color-primary);
+}
+
