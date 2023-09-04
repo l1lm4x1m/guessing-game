@@ -1,0 +1,23 @@
+#root {
+    height: 100vh;
+    background-color: var(--token-background-color-primary);
+    color: var(--token-color-primary);
+    transition: all 0.4s ease;
+}
+
+#root.win {
+    background-color: var(--constant-color-green);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+[theme="light"] {
+    --token-background-color-primary: var(--constant-color-white);
+    --token-color-primary: var(--constant-color-black);
+    --token-background-color-hover: var(--constant-color-black);
+    --token-color-hover: var(--constant-color-white);
+}

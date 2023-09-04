@@ -1,0 +1,18 @@
+.button {
+    border: 1px solid var(--token-color-primary);
+    border-radius: var(--constant-border-radius);
+    padding: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: all 0.2s ease-in;
+}
+
+.button[disabled] {
+    opacity: 0.4;
+}
+
+.button:not([disabled]):hover {
+    background-color: var(--token-background-color-hover);
+    color: var(--token-color-hover);
+    cursor: pointer;
+}

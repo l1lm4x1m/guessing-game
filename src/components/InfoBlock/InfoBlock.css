@@ -1,0 +1,28 @@
+.info-block {
+    border: 1px solid var(--token-color-primary);
+    border-radius: var(--constant-border-radius);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-block__level,
+.info-block__try-counts {
+    font-weight: bold;
+}
+
+.info-block__theme {
+    border-radius: var(--constant-border-radius);
+    padding: 5px;
+    text-align: center;
+}
+
+.info-block__theme:focus {
+    outline: 1px solid var(--token-color-primary);
+}
+
+.info-block__theme option {
+    background-color: var(--token-background-color-primary);
+    color: var(--token-color-primary);
+}

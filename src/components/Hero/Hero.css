@@ -1,0 +1,21 @@
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero__secret-number,
+.hero__game-condition-info {
+    font-size: var(--constant-font-size-big);
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hero__secret-number {
+    color: yellow;
+}
+
+.hero__game-condition-info {
+    color: indigo;
+}
